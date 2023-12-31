@@ -39,6 +39,7 @@ alias gd="git diff --color-words"
 alias gl="git log --oneline --decorate"
 alias glog="git log --oneline --all --graph --decorate -n 30"
 alias gslog="git log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
+alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
@@ -52,7 +53,7 @@ antigen bundle httpie
 antigen bundle docker
 antigen bundle git-extras
 antigen bundle zsh-users/zsh-completions
-antigen bundle sindresorhus/pure
+# antigen bundle sindresorhus/pure
 # antigen bundle mafredri/zsh-async
 
 # Load Catppuccin for zsh-syntax-highlighting (Catppuccin Mocha)
@@ -95,4 +96,4 @@ autoload -U promptinit; promptinit
 prompt pure
 
 # Launch neofetch on startup
-# neofetch
+# neofetchalias config='/usr/bin/git --git-dir=/Users/aarampatzis/.cfg/ --work-tree=/Users/aarampatzis'
