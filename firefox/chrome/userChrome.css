@@ -1,0 +1,20 @@
+/*
+- Place the file into the "Profile Folder"
+- Set `toolkit.legacyUserProfileCustomizations.stylesheets` to true in about:config
+- More settings: https://github.com/piroor/treestyletab/wiki/Code-snippets-for-custom-style-rules#for-userchromecss
+*/
+
+#tabbrowser-tabs {
+  visibility: collapse;
+}
+
+#titlebar #TabsToolbar {
+  background-color: var(--toolbar-bgcolor);
+  background-image: var(--toolbar-bgimage);
+  padding-top: 5px;
+}
+
+/* Hide the header at the top of the sidebar */
+#sidebar-header {
+  visibility: collapse !important;
+} 
