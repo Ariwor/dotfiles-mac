@@ -24,6 +24,7 @@ yabai -m config auto_balance                 off
 yabai -m config mouse_modifier               alt
 yabai -m config mouse_action1                move
 yabai -m config mouse_action2                resize
+yabai -m config mouse_drop_action            stack
  
 # General space settings
 yabai -m config layout                       bsp
@@ -33,11 +34,12 @@ yabai -m config right_padding                0
 yabai -m config window_gap                   0
  
 # Rules for specific apps
-yabai -m rule --add app="^(System Information|System Preferences|Activity Monitor|App Store)$" sticky=on layer=above manage=off
-yabai -m rule --add app="^Finder$" sticky=on layer=above manage=off
-yabai -m rule --add app="^Fusion 360$" sticky=on layer=above manage=off
-yabai -m rule --add app="^ImageJ$" sticky=on layer=above manage=off
-yabai -m rule --add app="^zoom\.us$" sticky=on layer=above manage=off
+yabai -m rule --add app="^(System Information|System Preferences|Activity Monitor|App Store)$" manage=off
+yabai -m rule --add app="^Finder$" manage=off
+yabai -m rule --add app="^Fusion$" manage=off
+yabai -m rule --add app="^KiCad$" manage=off
+yabai -m rule --add app="^ImageJ$" manage=off
+yabai -m rule --add app="^zoom\.us$" manage=off
  
 # bind windows to desktops
 yabai -m rule --add app="^Visual Studio Code$" space=1
