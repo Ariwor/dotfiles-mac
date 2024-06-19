@@ -97,3 +97,18 @@ prompt pure
 
 # Launch neofetch on startup
 # neofetchalias config='/usr/bin/git --git-dir=/Users/aarampatzis/.cfg/ --work-tree=/Users/aarampatzis'
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/aarampatzis/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/aarampatzis/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/aarampatzis/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/aarampatzis/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
