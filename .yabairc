@@ -40,6 +40,7 @@ yabai -m rule --add app="^Fusion$" manage=off
 yabai -m rule --add app="^KiCad$" manage=off
 yabai -m rule --add app="^ImageJ$" manage=off
 yabai -m rule --add app="^zoom\.us$" manage=off
+yabai -m rule --add app="^Adobe Illustrator 2024$" manage=off
  
 # bind windows to desktops
 yabai -m rule --add app="^Visual Studio Code$" space=1
