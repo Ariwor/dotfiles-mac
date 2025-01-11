@@ -1,0 +1,52 @@
+#!/usr/bin/env sh
+ 
+# Fonts
+ 
+text_font="SF UI Text"
+ic_font="JetBrainsMono Nerd Font"
+ 
+# Colors (Catppuccin Mocha)
+ 
+mantle='181825'
+subtext0='a6adc8'
+green='a6e3a1'
+white='cdd6f4'
+red='f38ba8'
+teal='94e2d5'
+mauve='cba6f7'
+ 
+# Settings
+ 
+spacebar -m config position                    top
+spacebar -m config height                      24
+spacebar -m config title                       on
+spacebar -m config spaces                      on
+spacebar -m config clock                       on
+spacebar -m config power                       on
+spacebar -m config padding_left                20
+spacebar -m config padding_right               20
+spacebar -m config spacing_left                25
+spacebar -m config spacing_right               15
+spacebar -m config text_font                   "$text_font:Regular:14"
+spacebar -m config icon_font                   "$ic_font:Regular:14"
+spacebar -m config background_color            0xff$mantle
+spacebar -m config foreground_color            0xff$subtext0
+spacebar -m config power_icon_color            0xff$green
+spacebar -m config battery_icon_color          0xff$red
+spacebar -m config dnd_icon_color              0xff$teal
+spacebar -m config clock_icon_color            0xff$teal
+spacebar -m config space_icon_color            0xff$subtext0
+spacebar -m config space_icon_color_secondary  0xff78c4d4
+spacebar -m config space_icon_color_tertiary   0xfffff9b0
+spacebar -m config power_icon_strip                   
+spacebar -m config space_icon_strip                 
+spacebar -m config space_icon                  •
+spacebar -m config clock_icon           
+spacebar -m config dnd_icon                   
+spacebar -m config clock_format                "%d/%m/%y %R"
+spacebar -m config right_shell                 on
+spacebar -m config right_shell_icon            
+spacebar -m config right_shell_command         "$HOME/.config/spacebar/network.sh"
+
+ 
+echo "spacebar configuration loaded.."
